@@ -43,7 +43,7 @@ public class FrontControllerServletV2 extends HttpServlet {
 
         //front controller 에서 공통로직 처리!
         MyView view = controller.process(request, response); //process는 new MyView("/WEB-INF/views/new-form.jsp") 와 같은 뷰 객체를 반환해준다.
-        view.render(request, response);
+        view.render(request, response); // jsp로 forward 해줌.
 
     }
 }
